@@ -14,8 +14,31 @@
 <p style="padding-left: 30px;">Final Report (30%) - 利用網頁內容進行簡報並提交 pdf 格式書面報告, 完成後填回自評表單</p>
 <h1>Task</h1>
 <h2>Task1</h2>
-<p><a href="/downloads/start.bat - SciTE 2025-02-25 10-22-09.mp4">/downloads/start.bat - SciTE 2025-02-25 10-22-09.mp4</a></p>
-<p><a href="/downloads/選取 C__Windows_System32_cmd.exe 2025-02-25 10-28-05.mp4">/downloads/選取 C__Windows_System32_cmd.exe 2025-02-25 10-28-05.mp4</a></p>
+<p><a href="/downloads/start.bat - SciTE 2025-02-25 10-22-09.mp4" title="影片1">影片1</a></p>
+<p><a href="/downloads/選取 C__Windows_System32_cmd.exe 2025-02-25 10-28-05.mp4">影片2</a></p>
+<h3>list</h3>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">from browser import html
+
+url = "https://mde.tw/list/2b.txt"
+data = open(url).readlines()  # 讀取該 URL 的內容並將每一行資料存入列表
+
+# 印出資料總數，忽略標題行，資料從索引 1 開始
+all_stud = data[1:]
+print("總共有 " + str(len(all_stud)) + "名學員")
+from browser import html, document
+
+url = "https://mde.tw/list/2b.txt"
+data = open(url).readlines()
+
+all_stud = data[1:]
+print("總共有 " + str(len(all_stud)) + "名學員")
+
+brython_div1 = document["brython_div1"]  # 獲取 HTML 中 id 為 "brython_div1" 的元素
+
+# 建立並插入超連結 (anchor) 和換行 (break)
+brython_div1 &lt;= "1. " + html.A("scrum-1", href="https://mdecd2025.github.io/hw-scrum-1")
+brython_div1 &lt;= html.BR()  # 換行
+brython_div1 &lt;= "2. " + html.A("github.com", href="https://github.com")</pre>
 <h1>Homework</h1>
 <p>作業 (30%)</p>
 <p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>
