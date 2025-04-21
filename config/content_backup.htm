@@ -1116,23 +1116,14 @@ doc["aitetris"].bind("click", aitetris.do)
 </li>
 </ol>
 <p><strong data-end="3057" data-start="3044">手動建立webot場景的步驟</strong></p>
-<ol data-end="3317" data-start="3041">
-<li class="" data-end="3071" data-start="3041">
-<p class="" data-end="3071" data-start="3044"><strong data-end="3057" data-start="3044">啟動 Webots</strong>：打開 Webots 軟體。</p>
-</li>
-<li class="" data-end="3117" data-start="3072">
-<p class="" data-end="3117" data-start="3075"><strong data-end="3084" data-start="3075">創建新世界</strong>：選擇「File」&gt;「New World」，創建一個新的世界檔案。</p>
-</li>
-<li class="" data-end="3192" data-start="3118">
-<p class="" data-end="3192" data-start="3121"><strong data-end="3130" data-start="3121">添加機器人</strong>：在「Scene Tree」中右鍵點擊「DEF WorldInfo」，選擇「Add」&gt;「Robot」，選擇所需的機器人模型。</p>
-</li>
-<li class="" data-end="3247" data-start="3193">
-<p class="" data-end="3247" data-start="3196"><strong data-end="3208" data-start="3196">設置機器人控制器</strong>：在「Robot」節點中，設置「controller」欄位為所需的控制器名稱。</p>
-</li>
-<li class="" data-end="3317" data-start="3248">
-<p class="" data-end="3317" data-start="3251"><strong data-end="3261" data-start="3251">添加環境物體</strong>：在「Scene Tree」中右鍵點擊「DEF WorldInfo」，選擇「Add」&gt;「Solid」，設置物體的</p>
-</li>
-</ol><h1>Homework</h1>
+<p><strong data-end="3057" data-start="3044">目標場景範例： 建立一個簡單的地面環境，場景中包含： 一個平坦地板 一個機器人（預設為 e-puck） 一個障礙物（例如立方體） 一個基本的控制器（空的 Python 程式） 🛠 建立步驟詳解（GUI 操作流程） </strong></p>
+<p><strong data-end="3057" data-start="3044"> 1. 啟動 Webots 並建立新世界 開啟 Webots。 點選上方選單 File &gt; New World（檔案 &gt; 新建世界）。 新建世界會出現一個空白的地板（通常已包含 WorldInfo, Viewpoint, TexturedBackground, TexturedSkybox 等預設元件）。 </strong></p>
+<p><strong data-end="3057" data-start="3044">2. 新增一個平坦地面 在 Scene Tree（場景樹） 視窗中，右鍵點選 root → 選擇 Add &gt; Floor。 點選剛剛新增的 Floor 節點，在右側「Field」視窗中可設定： size：如 [5, 5] 表示寬 5m、長 5m。 appearance：可以改成 PBRAppearance 改變材質。 注意： 不要放置太小的地板，機器人容易掉出模擬範圍。  </strong></p>
+<p><strong data-end="3057" data-start="3044">3. 加入機器人（以 e-puck 為例） 在 root 節點上再次右鍵 → Add &gt; Robot。 在彈出的模型清單中選擇 e-puck。 點選該機器人節點，在 controller 欄位輸入控制器名稱，例如：my_controller（稍後會自動產生此程式）。  注意： 若控制器名稱未填寫，機器人不會執行任何程式。 一個機器人只能有一個控制器。  </strong></p>
+<p><strong data-end="3057" data-start="3044">4. 加入障礙物（例如方塊） 在 root 上右鍵 → Add &gt; Solid。 點選新增的 Solid 節點，並命名為 Obstacle。 在 boundingObject 中加入一個立方體碰撞體： 點選 boundingObject → Add &gt; Box。 設定大小為 [0.2, 0.2, 0.2]（20cm 正立方體）。 在 children 欄位中 → Add &gt; Shape &gt; Appearance &gt; PBRAppearance 改變顏色或材質。  </strong></p>
+<p><strong data-end="3057" data-start="3044">5. 建立控制器程式 儲存你的世界（File &gt; Save World As...）。 點選上方 Wizards &gt; New Robot Controller。 選擇你先前輸入的控制器名稱（例如 my_controller）。 語言選擇 Python。 系統會幫你建立一個初始的 Python 控制器，包含迴圈與基本 API。  </strong></p>
+<p><strong data-end="3057" data-start="3044">6. 執行模擬 點選工具列中的「播放」按鈕 開始模擬。 可在底下控制台觀察輸出訊息。 若控制器為空，可以加入簡單的移動程式碼</strong></p>
+<p><strong data-end="3057" data-start="3044">建立場景時的注意事項 注意點<span> </span>說明 地板大小<span> </span>太小的地板會讓機器人掉落出模擬範圍 控制器名稱<span> </span>必須與建立的程式名稱一致，否則無法執行 Robot 模型位置<span> </span>放置時機器人若重疊其他物體會出錯，可稍微抬高 translation.z Solid 必須有碰撞體<span> </span>boundingObject 未設定會導致無法互動或穿透</strong></p><h1>Homework</h1>
 <p>作業 (30%)</p>
 <p>HW1 (5%): <span style="background-color: #ffff00;">建立由 Box 組成的平面四連桿機構 Webots 模擬場景</span></p>
 <p style="padding-left: 30px;">part1:</p>
