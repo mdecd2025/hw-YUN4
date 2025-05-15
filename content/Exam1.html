@@ -152,6 +152,12 @@ img.add_border {
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/NkjVch2xUgw?si=WKezCoRYsXm4LcGv" title="YouTube video player" width="560"></iframe></p>
 <p>製作過程</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/iC8OJmPxJdU?si=aQoFTJPgmkJXZkMU" title="YouTube video player" width="560"></iframe></p>
+<p><span>加入Robot</span><br/><span>新增solid在children中新建shape</span><br/><span>命名為base</span><br/><span>在base建立1,0.1,0.1的shape</span></p>
+<p>建立Hingejoint命名為joint1在endpoint建立soild</p>
+<p>children中建立pose</p>
+<p>在pose中的children建立<span>0.4,0.1,0.1的shape</span><br/><span>joint1，調整axis(0,0,1),anchor(-0.5,0,0)</span><br/><span>調整位置(-0.5,0,0)與角度(0,0,1,0.558)學號後兩碼為32</span><br/><span>新增馬達命名為 motor</span><br/><span>在joint1加入新的Hingejoint命名為joint2</span></p>
+<p>一樣新增soild後新增pose<span>建立0.6,0.1,0.1的shape</span><br/><span>還要再建一個0.3,0.1,0.1的方塊</span><br/><span>調整位置(0.4,0,0.1)與角度(0,0,1,0.66)</span><br/><span>joint2，調整axis(0,0,1),anchor(0.4,0,0)</span><br/><span>在joint2加入新的Hingejoint命名為joint3</span></p>
+<p><span>新增soild後新增pose</span><span>建立</span><span>0.9,0.1,0.1的shape</span><br/><span>調整位置(0.6,0,-0.1)與角度(0,0,-1,2.26)</span><br/><span>joint3，調整axis(0,0,1),anchor(0.6,0,0)</span><br/><span>在link3_shape加入新的Hingejoint命名為joint4</span><br/><span>新增SolidReference接到static environment</span><br/><span>joint4調整axis(0,0,1),anchor(0.9,0,0)</span><br/><span>joint1、2、3分別開啟bounding 以及physics</span><br/><span>加入controller</span></p>
 <p>在製作EXAM1的時候一樣出現link3無法固定的問題，在多次檢查過後發現是joint3的旋轉軸忘記改了，可能之前遇到的問題就是某個旋轉軸忘記改導致他鎖死或無法固定，如過在製作過程中沒仔細把每個步驟都做好事後檢查可能會很難找出問題，要一個一個慢慢看會看錯或是漏掉一些小地方。</p><br />Exam << <a href='Exam.html'>Previous</a> <a href='Exam2.html'>Next</a> >> Exam2</div>
         
     <!-- footer -->
