@@ -1242,6 +1242,12 @@ doc["aitetris"].bind("click", aitetris.do)
 <p><img alt="" height="267" src="/images/螢幕擷取畫面 2025-05-20 005429.png" width="507"/></p>
 <p>零件組合圖</p>
 <p><img alt="" height="294" src="/images/螢幕擷取畫面 2025-05-20 005807.png" width="541"/></p>
+<p>操作步驟:</p>
+<p><span>加入Robot</span><br/><span>新增兩個solid在children中新建Cadshape</span><br/><span>命名為base1，base2</span></p>
+<p>建立兩個Hingejoint命名為joint1在endpoint建立soild</p>
+<p>children建立Cad<span>shape</span><br/><span>joint1，調整axis(0,0,1)</span><br/><span>新增馬達命名為 motor</span><br/><span>在joint1加入新的Hingejoint命名為joint2</span></p>
+<p>一樣新增soild後<span>建立Cadshape</span><br/><span>joint2，調整axis(0,0,1),anchor(1.1194,0.6995,0)</span><br/><span>在joint2加入新的Hingejoint命名為joint3</span></p>
+<p><span>新增soild後</span><span>建立Cad</span><span>shape</span><br/><span>joint3，調整axis(0,0,1),anchor(2.656,1.9001,0)</span><br/><span>新增Hingejoint命名為joint4</span><br/><span>新增SolidReference接到link3</span><br/><span>joint4調整axis(0,0,1),anchor(1.65,0,0)</span><br/><span>joint1、2、3分別開啟bounding 以及physics</span><br/><span>加入controller</span></p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/B5o3N0cd-Yw?si=uLs-2K3HOnI31OaZ" title="YouTube video player" width="560"></iframe></p>
 <p>製作過程影片</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/5XSo21iZC5w?si=qel6eFBDJrMQoh5b" title="YouTube video player" width="560"></iframe></p><h2>Exam3</h2>
