@@ -2,7 +2,7 @@
         <head>
         <title>cd_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H2">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -142,11 +142,212 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">Task << <a href='Task.html'>Previous</a> <a href='list.html'>Next</a> >> list<br /><h1>Task1</h1>
-<p>將舊python改成新版本的操作影片</p>
-<p><a href="./../downloads/start.bat - SciTE 2025-02-25 10-22-09.mp4" title="影片1">影片1</a></p>
-<p><a href="./../downloads/選取 C__Windows_System32_cmd.exe 2025-02-25 10-28-05.mp4">影片2</a></p>
-<br />Task << <a href='Task.html'>Previous</a> <a href='list.html'>Next</a> >> list</div>
+    <div id="tipue_search_content">23. 請說明如何在 Webots 中設定機器人的初始位置和方向。 << <a href='23. 請說明如何在 Webots 中設定機器人的初始位置和方向。.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2<br /><h1>24. 在 Tutorial1 或 Tutorial2 中，如何讓機器人執行預設外的自訂動作？</h1>
+<p data-end="4885" data-start="4803"><span class="relative -mx-px my-[-0.2rem] rounded px-px py-[0.2rem] transition-colors duration-100 ease-in-out">要讓機器人執行自訂動作，可進行以下操作：</span></p>
+<ul data-end="5080" data-start="4887">
+<li data-end="4983" data-start="4887">
+<p data-end="4983" data-start="4889"><strong data-end="4900" data-start="4889">修改控制器程式</strong>：<span class="relative -mx-px my-[-0.2rem] rounded px-px py-[0.2rem] transition-colors duration-100 ease-in-out">在控制器程式中，加入新的行為邏輯，例如根據感測器資料決定移動方向。</span></p>
+</li>
+<li data-end="5080" data-start="4985">
+<p data-end="5080" data-start="4987"><strong data-end="4997" data-start="4987">設定事件觸發</strong>：<span class="relative -mx-px my-[-0.2rem] rounded px-px py-[0.2rem] transition-colors duration-100 ease-in-out">根據時間或感測器輸入，觸發不同的動作，例如避開障礙物或轉向。</span></p>
+</li>
+</ul>
+<p data-end="5100" data-start="5082">這樣可以使機器人具備更靈活的行為模式</p>
+<p><br/>25. <strong data-end="71" data-start="41">Webots 支援哪些主流程控制語言？各有何優缺點？</strong></p>
+<p data-end="99" data-start="73">Webots 支援多種程式語言作為控制器語言，包括：</p>
+<div class="_tableContainer_16hzy_1">
+<div class="_tableWrapper_16hzy_14 group flex w-fit flex-col-reverse" tabindex="-1">
+<table class="w-fit min-w-(--thread-content-width)" data-end="1039" data-start="101">
+<thead data-end="252" data-start="101">
+<tr data-end="252" data-start="101">
+<th data-col-size="sm" data-end="112" data-start="101">語言</th>
+<th data-col-size="sm" data-end="181" data-start="112">優點</th>
+<th data-col-size="sm" data-end="252" data-start="181">缺點</th>
+</tr>
+</thead>
+<tbody data-end="1039" data-start="413">
+<tr data-end="537" data-start="413">
+<td data-col-size="sm" data-end="426" data-start="413"><strong data-end="424" data-start="415">C/C++</strong></td>
+<td data-col-size="sm" data-end="477" data-start="426">效能高、API 完整、可與底層硬體/資料結構整合</td>
+<td data-col-size="sm" data-end="537" data-start="477">語法相對複雜，開發與除錯時間長</td>
+</tr>
+<tr data-end="659" data-start="538">
+<td data-col-size="sm" data-end="551" data-start="538"><strong data-end="550" data-start="540">Python</strong></td>
+<td data-col-size="sm" data-end="601" data-start="551">語法簡單、開發快速、適合教學與原型開發</td>
+<td data-col-size="sm" data-end="659" data-start="601">效能較低，不適合需要即時反應的場景</td>
+</tr>
+<tr data-end="793" data-start="660">
+<td data-col-size="sm" data-end="673" data-start="660"><strong data-end="670" data-start="662">Java</strong></td>
+<td data-col-size="sm" data-end="732" data-start="673">結構清晰、跨平台特性強</td>
+<td data-col-size="sm" data-end="793" data-start="732">使用較少，社群與資源較 Python 和 C/C++ 少</td>
+</tr>
+<tr data-end="915" data-start="794">
+<td data-col-size="sm" data-end="807" data-start="794"><strong data-end="806" data-start="796">MATLAB</strong></td>
+<td data-col-size="sm" data-end="859" data-start="807">適合控制理論與數值模擬，便於與 Simulink 整合</td>
+<td data-col-size="sm" data-end="915" data-start="859">授權限制，效能受限，不支援所有 Webots 功能</td>
+</tr>
+<tr data-end="1039" data-start="916">
+<td data-col-size="sm" data-end="929" data-start="916"><strong data-end="925" data-start="918">ROS</strong></td>
+<td data-col-size="sm" data-end="979" data-start="929">可與 ROS 生態系整合、支援真實硬體與模擬結合</td>
+<td data-col-size="sm" data-end="1039" data-start="979">設定與整合較複雜，學習曲線陡峭</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<hr data-end="1044" data-start="1041"/>
+<p><br/>26. <strong data-end="1091" data-start="1054">機器人控制器程式如何與其他程式（如資料記錄、遠端伺服器）進行通訊？</strong></p>
+<p data-end="1109" data-start="1093">控制器與外部系統的通訊方式包括：</p>
+<ul data-end="1408" data-start="1111">
+<li data-end="1255" data-start="1111">
+<p data-end="1153" data-start="1113"><strong data-end="1135" data-start="1113">Socket 通訊（TCP/UDP）</strong>：常見用於與伺服器、資料庫交換資訊。</p>
+<div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary">
+<div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary select-none rounded-t-2xl">python</div>
+<div class="sticky top-9">
+<div class="absolute end-0 bottom-0 flex h-9 items-center pe-2">
+<div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-python"><span><span><span class="hljs-keyword">import</span></span><span> socket s = socket.socket() s.connect((</span><span><span class="hljs-string">'host'</span></span><span>, port)) s.send(</span><span><span class="hljs-string">b'data'</span></span><span>) </span></span></code></div>
+</div>
+</li>
+<li data-end="1308" data-start="1259">
+<p data-end="1308" data-start="1261"><strong data-end="1272" data-start="1261">HTTP 請求</strong>：使用 <code data-end="1286" data-start="1276">requests</code> 等函式庫與 RESTful API 通訊。</p>
+</li>
+<li data-end="1370" data-start="1310">
+<p data-end="1370" data-start="1312"><strong data-end="1330" data-start="1312">MQTT、ROS Topic</strong>：若使用 ROS，透過發送 topic 或 service 調用與其他節點互動。</p>
+</li>
+<li data-end="1408" data-start="1372">
+<p data-end="1408" data-start="1374"><strong data-end="1382" data-start="1374">檔案輸出</strong>：將資料寫入 CSV 或 TXT，再由其他程式讀取。</p>
+</li>
+</ul>
+<hr data-end="1413" data-start="1410"/>
+<p><br/>27. <strong data-end="1461" data-start="1423">Webots 的模擬世界中燈光和陰影設定如何影響感測器或相機的數據？</strong></p>
+<p data-end="1481" data-start="1463">燈光和陰影會直接影響以下感測器輸出：</p>
+<ul data-end="1587" data-start="1483">
+<li data-end="1526" data-start="1483">
+<p data-end="1526" data-start="1485"><strong data-end="1492" data-start="1485">攝影機</strong>：亮度不足或光線反射會造成圖像模糊、過曝或黑影，降低影像辨識準確性。</p>
+</li>
+<li data-end="1558" data-start="1527">
+<p data-end="1558" data-start="1529"><strong data-end="1544" data-start="1529">距離感測器（如紅外線）</strong>：可能因陰影導致測量不準確。</p>
+</li>
+<li data-end="1587" data-start="1559">
+<p data-end="1587" data-start="1561"><strong data-end="1570" data-start="1561">顏色感測器</strong>：在不同光照下，顏色感應可能偏差。</p>
+</li>
+</ul>
+<p data-end="1599" data-start="1589">🛠 <strong data-end="1598" data-start="1592">解法</strong>：</p>
+<ul data-end="1669" data-start="1600">
+<li data-end="1630" data-start="1600">
+<p data-end="1630" data-start="1602">增加環境光（ambient light）或指定光源方向。</p>
+</li>
+<li data-end="1669" data-start="1631">
+<p data-end="1669" data-start="1633">使用 <code data-end="1656" data-start="1636">Camera recognition</code> 模式輔助，減少光影干擾。</p>
+</li>
+</ul>
+<hr data-end="1674" data-start="1671"/>
+<p><br/>28. <strong data-end="1725" data-start="1684">如何在 Webots 中調整機器人或感測器的物理參數（如質量、摩擦係數）？</strong></p>
+<p data-end="1757" data-start="1727">可在世界檔（<code data-end="1739" data-start="1733">.wbt</code>）或 PROTO 檔中設定以下參數：</p>
+<ul data-end="2027" data-start="1759">
+<li data-end="1867" data-start="1759">
+<p data-end="1768" data-start="1761"><strong data-end="1767" data-start="1761">質量</strong>：</p>
+<div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary">
+<div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary select-none rounded-t-2xl">plaintext</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-plaintext"><span><span>DEF MY_ROBOT Robot { ... physics Physics { mass 1.2 } } </span></span></code></div>
+</div>
+</li>
+<li data-end="1998" data-start="1869">
+<p data-end="1912" data-start="1871"><strong data-end="1879" data-start="1871">摩擦係數</strong>：<br/> 在 <code data-end="1904" data-start="1885">ContactProperties</code> 中設置，例如：</p>
+<div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary">
+<div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary select-none rounded-t-2xl">plaintext</div>
+<div class="sticky top-9">
+<div class="absolute end-0 bottom-0 flex h-9 items-center pe-2">
+<div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-plaintext"><span><span>ContactProperties { coulombFriction 0.8 bounce 0.0 } </span></span></code></div>
+</div>
+</li>
+<li data-end="2027" data-start="2000">
+<p data-end="2027" data-start="2002"><strong data-end="2016" data-start="2002">彈性、阻尼等物理屬性</strong>也可透過相應欄位設定。</p>
+</li>
+</ul>
+<hr data-end="2032" data-start="2029"/>
+<p><br/>29. <strong data-end="2090" data-start="2042">請說明如何使用 Webots 的 Console 與 Debug 工具協助程式錯誤排除。</strong></p>
+<ul data-end="2321" data-start="2092">
+<li data-end="2155" data-start="2092">
+<p data-end="2155" data-start="2094"><strong data-end="2108" data-start="2094">Console 輸出</strong>：可使用 <code data-end="2122" data-start="2113">print()</code>（Python）或 <code data-end="2142" data-start="2132">printf()</code>（C）觀察變數或執行流程。</p>
+</li>
+<li data-end="2244" data-start="2156">
+<p data-end="2171" data-start="2158"><strong data-end="2170" data-start="2158">Debug 模式</strong>：</p>
+<ul data-end="2244" data-start="2174">
+<li data-end="2203" data-start="2174">
+<p data-end="2203" data-start="2176">在 Webots 中啟用「Pause」模式，逐步播放。</p>
+</li>
+<li data-end="2244" data-start="2206">
+<p data-end="2244" data-start="2208">檢查 Simulation &gt; Console 視窗中是否出現錯誤訊息。</p>
+</li>
+</ul>
+</li>
+<li data-end="2280" data-start="2245">
+<p data-end="2280" data-start="2247"><strong data-end="2262" data-start="2247">控制器日誌（logs）</strong>：自動儲存控制器執行錯誤，便於追蹤。</p>
+</li>
+<li data-end="2321" data-start="2281">
+<p data-end="2321" data-start="2283"><strong data-end="2300" data-start="2283">Supervisor 支援</strong>：可以在模擬中隨時重設物件狀態，有助除錯。</p>
+</li>
+</ul>
+<hr data-end="2326" data-start="2323"/>
+<p><br/>30. <strong data-end="2374" data-start="2336">Tutorial1、2 裡的機器人遇到物體時，碰撞偵測機制如何運作？</strong></p>
+<p data-end="2396" data-start="2376">Webots 透過以下方式進行碰撞偵測：</p>
+<ul data-end="2543" data-start="2398">
+<li data-end="2448" data-start="2398">
+<p data-end="2448" data-start="2400"><strong data-end="2419" data-start="2400">物理引擎（ODE）模擬真實碰撞</strong>：每個機器人部件皆有碰撞形狀（bounding box）。</p>
+</li>
+<li data-end="2502" data-start="2449">
+<p data-end="2502" data-start="2451"><strong data-end="2474" data-start="2451">觸覺感測器（Touch Sensor）</strong>：可選擇設置在物體或輪子上，用以偵測是否與其他物體接觸。</p>
+</li>
+<li data-end="2543" data-start="2503">
+<p data-end="2543" data-start="2505"><strong data-end="2523" data-start="2505">distanceSensor</strong> 雖非物理碰撞，但也可預測「接近狀態」。</p>
+</li>
+</ul>
+<p data-end="2575" data-start="2545">碰撞時會自動處理反作用力與位置變化，機器人可能會停下或彈回。</p>
+<hr data-end="2580" data-start="2577"/>
+<p><br/>31. <strong data-end="2631" data-start="2590">若要將 Webots 模擬結果導出並進行數據分析，你會選擇哪些方法與工具？</strong></p>
+<p data-end="2643" data-start="2633">導出與分析方式包括：</p>
+<ul data-end="2970" data-start="2645">
+<li data-end="2768" data-start="2645">
+<p data-end="2675" data-start="2647"><strong data-end="2658" data-start="2647">控制器寫檔輸出</strong>：將感測器數據寫入 CSV 檔案。</p>
+<div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary">
+<div class="flex items-center text-token-text-secondary px-4 py-2 text-xs font-sans justify-between h-9 bg-token-sidebar-surface-primary select-none rounded-t-2xl">python</div>
+<div class="sticky top-9">
+<div class="absolute end-0 bottom-0 flex h-9 items-center pe-2">
+<div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div>
+</div>
+</div>
+<div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-python"><span><span><span class="hljs-keyword">with</span></span><span> </span><span><span class="hljs-built_in">open</span></span><span>(</span><span><span class="hljs-string">"data.csv"</span></span><span>, </span><span><span class="hljs-string">"w"</span></span><span>) </span><span><span class="hljs-keyword">as</span></span><span> f: f.write(</span><span><span class="hljs-string">f"<span class="hljs-subst">{sensor.getValue()}</span></span></span><span>\n") </span></span></code></div>
+</div>
+</li>
+<li data-end="2810" data-start="2770">
+<p data-end="2810" data-start="2772"><strong data-end="2801" data-start="2772">Supervisor 寫入 JSON 或 YAML</strong>：便於跨語言解析。</p>
+</li>
+<li data-end="2852" data-start="2812">
+<p data-end="2852" data-start="2814"><strong data-end="2835" data-start="2814">Webots Logging 功能</strong>：儲存模擬資料以供圖像、路徑分析。</p>
+</li>
+<li data-end="2970" data-start="2854">
+<p data-end="2866" data-start="2856"><strong data-end="2865" data-start="2856">後處理工具</strong>：</p>
+<ul data-end="2970" data-start="2869">
+<li data-end="2899" data-start="2869">
+<p data-end="2899" data-start="2871">使用 <strong data-end="2891" data-start="2874">Python/pandas</strong> 進行資料分析。</p>
+</li>
+<li data-end="2931" data-start="2902">
+<p data-end="2931" data-start="2904">用 <strong data-end="2916" data-start="2906">MATLAB</strong> 匯入 CSV 分析時間序列。</p>
+</li>
+<li data-end="2970" data-start="2934">
+<p data-end="2970" data-start="2936">可搭配 <strong data-end="2960" data-start="2940">Jupyter Notebook</strong> 建立互動分析介面。</p>
+</li>
+</ul>
+</li>
+</ul>
+<br />23. 請說明如何在 Webots 中設定機器人的初始位置和方向。 << <a href='23. 請說明如何在 Webots 中設定機器人的初始位置和方向。.html'>Previous</a> <a href='HW2.html'>Next</a> >> HW2</div>
         
     <!-- footer -->
       <div class="container">
